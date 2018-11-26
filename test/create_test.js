@@ -4,7 +4,7 @@ const Thread = require('../src/thread');
 const Comment = require('../src/comment');
 
 
- describe('Creating records', () => {
+describe('Creating records', () => {
     let joe, jack, threadOne, comment;
 
     beforeEach((done) => {
@@ -23,7 +23,7 @@ const Comment = require('../src/comment');
     });
 
     it('saves a user', (done) => {
-        const pete = new User({name: 'Pete', password: 'test1234'});
+        const pete = new User({name: 'Pete'});
 
         pete.save()
          .then (() => {
