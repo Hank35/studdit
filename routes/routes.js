@@ -16,5 +16,12 @@ function replyBasic(req, res) {
 
 
 module.exports = (app) => {
+    //basic reply
     app.get('/', replyBasic)
+
+    // create a new user
+    app.post('/user', UserController.create);
+    // create a new thread
+    app.post('/thread', ThreadController.create )
 }
+    
